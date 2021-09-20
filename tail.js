@@ -1,11 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`😎😎😎 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`😓😓😓 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
+const assertEqual = require('./assertEqual');
 
 const tail = function(array) {
   return array.slice[1];
@@ -20,4 +13,4 @@ assertEqual(example1.length, 1);
 const example2 = [];
 assertEqual(example2.length, 0);
 
-
+module.exports = tail
